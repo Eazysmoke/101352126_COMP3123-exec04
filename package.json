@@ -1,0 +1,17 @@
+{
+  "name": "101352126_comp3123-exec04",
+  "version": "1.0.0",
+  "description": "COMP3123 Lab 4 Express JS application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Mechel Fernando",
+  "dependencies": {
+    "express": "^4.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}

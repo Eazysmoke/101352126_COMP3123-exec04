@@ -1,0 +1,70 @@
+{
+  "info": {
+    "name": "101352126 COMP3123 exec04",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Hello",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/hello"
+      }
+    },
+    {
+      "name": "Default user",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/user"
+      }
+    },
+    {
+      "name": "Query user",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/user?firstname=John&lastname=Doe"
+      }
+    },
+    {
+      "name": "Path user",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "http://localhost:3000/user/John/Doe"
+      }
+    },
+    {
+      "name": "Users array",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "http://localhost:3000/users",
+        "body": {
+          "mode": "raw",
+          "raw": "[\n  {\n    \"firstname\": \"Pritesh\",\n    \"lastname\": \"Patel\"\n  },\n  {\n    \"firstname\": \"John\",\n    \"lastname\": \"Doe\"\n  },\n  {\n    \"firstname\": \"John\",\n    \"lastname\": \"Rome\"\n  }\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Static instructions",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/instruction.html"
+      }
+    }
+  ]
+}
